@@ -1,4 +1,4 @@
-### **本游戏基于python的pygame第三方模块编写**
+### **本游戏基于python的第三方模块pygame开发**
 
 ##### 游戏运行环境:
 
@@ -104,17 +104,17 @@ def update(self):
           if self.rect.y >= Manager.HEIGHT:
               self.kill()
           self.rect.y += Manager.G * self.fruit_t ** 2 / 2
-  
+    
           # 计算水果在水平方向的位移之后的X坐标, 匀速运动
           # 公式: v0 * t * cos(α)
           self.rect.x += self.v0 * self.fruit_t
-  
+    
           # 累加经过的时间
           self.fruit_t += 0.01
-  
+    
           # 累加旋转总角度
           self.v_angel += self.turn_angel
-  
+    
   ```
 
   
